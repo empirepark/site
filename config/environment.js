@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'web',
+    modulePrefix: 'empirepark-site',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
