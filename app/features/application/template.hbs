@@ -18,26 +18,30 @@
         </div>
         <div class="menu-wrap col-md-8 ">
           <ul class="menu">
-            <li class="active">
-              <a href="index.html">What is Empire Park?</a>
-            </li>
-            <li>
-              <a href="programs.html">Programs</a>
-            </li>
-            <li>
-              <a href="about-us.html">Volunteers</a>
-            </li>
-            <li>
-              <a href="rentals.html">Rentals</a>
-            </li>
-            <li>
-              <a href="about-us.html">About</a>
-            </li>
-            <li>
+            {{#link-to "index" tagName="li" href=false}}
+              {{#link-to  "index"}}What is Empire Park?{{/link-to}}
+            {{/link-to}}
+
+            {{#link-to  "programs" tagName="li" href=false}}
+              {{#link-to  "programs"}}Programs{{/link-to}}
+            {{/link-to}}
+
+            {{#link-to  "volunteers" tagName="li" href=false}}
+              {{#link-to  "volunteers"}}Volunteers{{/link-to}}
+            {{/link-to}}
+
+            {{#link-to  "about" tagName="li" href=false}}
+              {{#link-to  "about"}}About{{/link-to}}
+            {{/link-to}}
+
+            {{!-- <li>
+              <a href="/rentals">Rentals</a>
+            </li> --}}
+            {{!-- <li>
               <a href="members.html">Members Portal</a>
-            </li>
-            <!--
-            Submenu example
+            </li> --}}
+
+            {{!-- Submenu example
             <li>
               <span>Rentals</span>
               <ul class="submenu">
@@ -45,8 +49,7 @@
                 <li><a href="link2.html">Link 2</a></li>
                 <li><a href="link3.html" class="active">Link 3</a></li>
               </ul>
-            </li>
-            -->
+            </li> --}}
           </ul>
         </div>
         <div class="col-md-1 col-xs-6">
