@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+// Font Awesome Configuration
+$fa-font-path: 'fonts';
+@import 'font-awesome';
+
+// Import Fonts from google Fonts
+@import "https://fonts.googleapis.com/css?family=Raleway:400,700,800,900,500|Lato:400,700,900";
+
+
+// Bootstrap Configuration
+@import 'tether';
+@import 'bower_components/bootstrap/scss/bootstrap';

@@ -1,0 +1,79 @@
+// Typography Mixins
+
+@mixin font-1-regular($weight: 400) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-1-medium($weight: 500) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-1-bold($weight: 700) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-1-extra-bold($weight: 800) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-1-heavy($weight: 900) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-2-regular($weight: 400) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-2-bold($weight: 700) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-2-extra-bold($weight: 900) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+}
+
+
+// Typrography
+h1 {
+  line-height: inherit;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+h6 {
+  font-size: 13px;
+  line-height: 13px;
+}
+
+p {
+  @include font-2-regular;
+  color: $text-base-2;
+  font-size: 14px;
+  line-height: 24px;
+}

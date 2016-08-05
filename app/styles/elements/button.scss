@@ -1,0 +1,81 @@
+.btn {
+  @include font-2-bold;
+  border: 0;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+
+  &.btn-secondary {
+    background: $base;
+    color: $white;
+    overflow: hidden;
+
+    &:hover {
+      background: $secondary-color;
+      color: $white;
+    }
+  }
+
+  &.btn-solid {
+    background: $base;
+    color: $white;
+    overflow: hidden;
+    position: relative;
+
+    i,
+
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+    }
+
+    &::after {
+      background: $black;
+      content: '';
+      display: block;
+      height: 0%;
+      left: 50%;
+      opacity: 0.08;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      -moz-transition: height 0.8s ease;
+      -o-transition: height 0.8s ease;
+      -webkit-transition: height 0.8s ease;
+      transition: height 0.8s ease;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &:hover {
+      &::after {
+        height: 500%;
+      }
+    }
+  }
+
+  &.btn-min {
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+  }
+
+  &.btn-big {
+    @include font-2-bold;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+
+    i {
+      margin-right: 12px;
+    }
+  }
+}
+
+
+
+.btns-wrapper {
+  display: inline-block;
+}

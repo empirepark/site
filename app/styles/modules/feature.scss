@@ -1,0 +1,73 @@
+.features {
+  .card {
+    border: 0;
+    background-color: inherit;
+  }
+}
+
+.feature {
+  text-align: center;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  h4 {
+    @include font-1-medium;
+    color: $text-base;
+    margin: 25px 0 12px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .btn {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(7px);
+    // transition: all 0.6 ease;
+    transition: opacity 0.8s ease, transform 0.5s ease;
+  }
+}
+
+.feature:hover {
+  transform: translateY(-25px);
+  h4 {
+    color: $base;
+  }
+  .btn {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature .icons {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-left: -24px;
+  left: 50%;
+  i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: opacity 0.5s ease;
+    &.icon-hover {
+      opacity: 0;
+      margin-top: -2px;
+      margin-left: -1px;
+      color: $base;
+    }
+  }
+}
+
+.feature:hover .icons {
+  i {
+    &.icon-default {
+      opacity: 0;
+    }
+    &.icon-hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.contact-us {
+  height: auto;
+  position: relative;
+  padding: 105px 0 0;
+  background: url('/assets/img/parallax/img-2.jpg') top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: hidden;
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+  .contact-form {
+    margin-top: 55px;
+  }
+  .title {
+    h2,
+    i,
+    h4 {
+      color: $white;
+    }
+    h4 {
+      @include font-1-medium;
+    }
+  }
+}
+
+.home-form {
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.749);
+  box-shadow: 0 -1 25 0 rgba(0, 0, 0, 0.27);
+  padding: 32px 15px 15px;
+  .field {
+    margin: 15px 0;
+    h4 {
+      @include font-1-regular;
+      margin-bottom: 10px;
+    }
+    input,
+    select,
+    textarea {
+      @include font-2-regular;
+      position: relative;
+      display: block;
+      width: 100%;
+      border: 0;
+      outline: 0;
+      height: 45px;
+      padding: 0 15px;
+      font-size: 16px;
+      color: fade-out($text-base, 0.85);
+      border-radius: 3px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &:active,
+      &:focus {
+        box-shadow: 0 0 2 0 fade-out($text-base-2, 0.45);
+      }
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: #fff url('/assets/img/icons/select-arrow.png') right no-repeat;
+    }
+    textarea {
+      height: 100px;
+      padding: 15px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    width: 100%;
+  }
+}

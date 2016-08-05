@@ -1,0 +1,45 @@
+section {
+  min-height: 520px;
+  padding: 100px 0 105px;
+  background: $site-background;
+}
+
+section .title {
+  text-align: center;
+  margin-bottom: 2em;
+  h2 {
+    @include font-1-heavy;
+    text-transform: uppercase;
+    color: $text-base;
+    margin-bottom: 10px;
+  }
+  h5 {
+    @include font-2-regular;
+    display: inline-block;
+    position: relative;
+    z-index: 8888;
+    padding: 0 15px;
+    font-size: 16px;
+    color: $text-base-2;
+  }
+}
+
+.short-text {
+  display: inline-block;
+  position: relative;
+  .sep {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 22px;
+    background: $base;
+    z-index: 1;
+    &.l {
+      left: -25px;
+    }
+    &.r {
+      right: -25px;
+    }
+  }
+}

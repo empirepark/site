@@ -1,0 +1,97 @@
+// General Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+a,
+ul,
+li,
+ol {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+button,
+input,
+textarea,
+select,
+blockquote {
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  position: relative;
+}
+body {
+  background: fade-in($black, 0.04);
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+// Titles
+.title {
+  text-align: center;
+  h2 {
+    @include font-1-heavy;
+    text-transform: uppercase;
+    color: $text-base;
+    margin-bottom: 10px;
+  }
+  h5 {
+    @include font-2-regular;
+    display: inline-block;
+    position: relative;
+    z-index: 8888;
+    padding: 0 15px;
+    font-size: 16px;
+    color: $text-base-2;
+  }
+  .short-text {
+    display: inline-block;
+    position: relative;
+    .sep {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 22px;
+      background: $base;
+      z-index: 1;
+      &.l {
+        left: -25px;
+      }
+      &.r {
+        right: -25px;
+      }
+    }
+  }
+}
+
+// .title.parallax {
+//   h2,
+//   i,
+//   h4 {
+//     color: #fff;
+//   }
+//   h4 {
+//     @include font-1-medium;
+//   }
+// }
