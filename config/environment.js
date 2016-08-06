@@ -1,7 +1,6 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'empirepark-site',
-    podModulePrefix: 'empirepark-site/features',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
