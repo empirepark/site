@@ -5,6 +5,9 @@
     "ember-cli-shims": "0.1.1",
     "ember-qunit-notifications": "0.1.0",
     "bootstrap": "^4.0.0-alpha.2",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "pretender": "~1.1.0",
+    "Faker": "~3.1.0",
+    "showdown": "^1.4.2"
   }
 }
