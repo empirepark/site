@@ -1,0 +1,56 @@
+.countdown-wrapper {
+    background: $base;
+    padding: 35px 0;
+    text-transform: uppercase;
+    color: #fff;
+    .text {
+        margin-top: 3%;
+        padding-right: 95px;
+        font-size: 24px;
+    }
+    .countdown {
+        display: inline-block;
+        float: right;
+        h3 {
+            display: inline-block;
+            float: left;
+            height: 45px;
+            padding: 0 15px;
+            margin: 0 5px;
+            border: 1px solid #fff;
+            line-height: 42px;
+            border-radius: 3px;
+            span {
+                margin-right: 5px;
+            }
+        }
+    }
+    @media screen and (max-width:1200px) {
+        text-align: center;
+        .text {
+            padding: 0;
+            margin-top: 0;
+            text-align: center;
+            float: none;
+        }
+        .countdown {
+            margin-top: 25px;
+            float: none;
+        }
+    }
+    @media screen and (max-width:650px) {
+        .text {
+            font-size: 20px;
+        }
+        .countdown {
+            margin-top: 15px;
+            h3 {
+                font-size: 18px;
+                line-height: 35px;
+                height: 35px;
+                padding: 0 5px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

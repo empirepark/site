@@ -75,3 +75,20 @@
         }
     }
 }
+
+.short-stats {
+    h5 {
+        @include font-2-regular;
+        color: fade(#000, 55%);
+        margin-right: 15px;
+        display: inline-block;
+        margin-top: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+        i {
+            margin-right: 5px;
+            color: $base;
+        }
+    }
+}

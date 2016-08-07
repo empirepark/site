@@ -1,10 +1,10 @@
-section {
+section .segment {
   min-height: 520px;
   padding: 100px 0 105px;
   background: $site-background;
 }
 
-section .title {
+section .segment .title {
   text-align: center;
   margin-bottom: 2em;
   h2 {
