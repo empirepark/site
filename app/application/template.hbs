@@ -14,7 +14,9 @@
     <div class="container">
       <div class="row">
         <div class="logo-wrap col-md-3 col-xs-6">
-          <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+          {{#link-to "index"}}
+            <img src="assets/img/logo.png" alt="">
+          {{/link-to}}
         </div>
         <div class="menu-wrap col-md-8 ">
           <ul class="menu">
@@ -30,8 +32,8 @@
               {{#link-to  "volunteers"}}Volunteers{{/link-to}}
             {{/link-to}}
 
-            {{#link-to  "about" tagName="li" href=false}}
-              {{#link-to  "about"}}About{{/link-to}}
+            {{#link-to  "membership" tagName="li" href=false}}
+              {{#link-to  "membership"}}Purchase a Membership{{/link-to}}
             {{/link-to}}
 
             {{!-- <li>
@@ -72,8 +74,7 @@
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <div class="card">
-          <h4 class="card-title">Empire Park</h4>
-          <!--<img src="assets/img/logo.png" alt="Empire Park Logo">-->
+          <img src="assets/img/logo.png" alt="Empire Park Logo">
           <p>
             You may also contact us using social media, phone, mail or in person during office hours.
           </p>

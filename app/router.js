@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('programs')
   this.route('volunteers')
-  this.route('about')
+  this.route('membership')
 })
 
 export default Router
