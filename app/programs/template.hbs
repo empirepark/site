@@ -10,25 +10,18 @@
 <div class="causes-page-wrapper">
   <div class="top-bar"></div>
 
-  {{!-- <div class="container">
-    <div class="info">
-      <h3>Showing Causes From:
-        <span class="dropdown-label">All Causes</span>
-      </h3>
-    </div>
-  </div> --}}
-
-  <div class="container causes-list" style="position: relative; height: 1047.2px;">
-    <div class="row cause content-box no-bg health education animals homeless" style="position: absolute; left: 15px; top: 0px;">
+  <div class="container causes-list">
+    {{#each model as |program|}}
+    <div class="row cause content-box">
       <div class="col-md-5 col-sm-6">
         <div class="img-wrapper">
           <div class="overlay"></div>
-          <img class="img-responsive" src="assets/img/causes/img-10.jpg" alt="">
+          <img class="img-responsive" src="assets/img/{{program.img}}" alt="">
         </div>
       </div>
       <div class="col-md-7 col-sm-6 info-block list">
         <div class="meta clearfix">
-          <h3>Delivering Food to Poor Peoples</h3>
+          <h3>{{program.title}}</h3>
           <div class="short-stats clearfix">
             <h5>
               <i class="fa fa-heart-o"></i>263 donors</h5>
@@ -36,7 +29,9 @@
               <i class="fa fa-clock-o"></i>18 days</h5>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloribus modi reiciendis magnam soluta architecto officiis nisi cum ipsam, est optio dolorum nostrum porro. Nesciunt iusto consectetur explicabo minus odit magni sunt magnam enim est!</p>
+
+        {{markdown-to-html program.flavour}}
+
         <div class="foundings">
           <div class="progress-bar-wrapper min">
             <div class="progress-bar-outer">
@@ -60,7 +55,7 @@
         </a>
       </div>
     </div>
-
+    {{/each}}
 
   </div>
 </div>
