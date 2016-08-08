@@ -14,6 +14,7 @@
   li {
     margin-left: 10px;
     padding-left: 1.3em;
+    font-size: inherit;
   }
   li::before {
     content: '\f101'; /* FontAwesome Unicode */
@@ -23,4 +24,27 @@
     margin-left: -1.3em; /* same as padding-left set on li */
     width: 1.3em; /* same as padding-left set on li */
   }
+
+  .card-title {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+
+  .tag {
+    margin-left: 0.5rem;
+  }
+}
+
+.job-list {
+  background: $white;
+  margin-bottom: 3rem;
+}
+
+.job-category {
+  @include font-1-bold;
+  background: #2879d7;
+  color: $white;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  // border-color: $grey-two
 }

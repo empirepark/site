@@ -36,6 +36,7 @@ Community Leagues for the use of facilities and assistance in funding.
     hook: `
 We offer two yoga programs`,
     flavour: `
+Very Large Flavour Text Styled in Markdown
     `
   },
   {
@@ -46,8 +47,10 @@ We offer two yoga programs`,
     cost: 'Free',
     audience: '',
     hook: `
+Look at my hook, my hook is amazing!
       `,
     flavour: `
+Very Large Flavour Text Styled in Markdown
     `
   },
   {
@@ -58,8 +61,9 @@ We offer two yoga programs`,
     cost: 'Free',
     audience: '',
     hook: `
-We offer two yoga programs`,
+Look at my hook, my hook is amazing!`,
     flavour: `
+Very Large Flavour Text Styled in Markdown
     `
   },
   {
@@ -72,6 +76,7 @@ We offer two yoga programs`,
     hook: `
 We offer two yoga programs`,
     flavour: `
+Very Large Flavour Text Styled in Markdown
     `
   },
   {
@@ -82,8 +87,9 @@ We offer two yoga programs`,
     cost: 'Free',
     audience: '',
     hook: `
-We offer two yoga programs`,
+Look at my hook, my hook is amazing!`,
     flavour: `
+Very Large Flavour Text Styled in Markdown
     `
   },
   {
@@ -94,8 +100,9 @@ We offer two yoga programs`,
     cost: 'Free',
     audience: '',
     hook: `
-We offer two yoga programs`,
+Art is lame... Just Kidding`,
     flavour: `
+Very Large Flavour Text Styled in Markdown
     `
   },
   {
@@ -106,8 +113,9 @@ We offer two yoga programs`,
     cost: 'Free',
     audience: '',
     hook: `
-We offer two yoga programs`,
+Look at my hook, my hook is amazing!`,
     flavour: `
+Very Large Flavour Text Styled in Markdown
     `
   }
 ]
