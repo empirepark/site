@@ -23,8 +23,10 @@ export default function() {
   */
 
   this.get('/programs', (schema) => {
-    console.log(schema)
-    console.log(schema.programs.all())
     return schema.programs.all()
+  })
+
+  this.get('/job-positions', (schema) => {
+    return schema.jobPositions.all()
   })
 }

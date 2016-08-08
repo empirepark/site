@@ -53,10 +53,10 @@ footer .card {
     @include font-2-regular;
     color: $grey-two;
     margin-bottom: 30px;
+  }
 
-    li {
-      margin-bottom: 1px;
-    }
+  li {
+    margin-bottom: 1px;
   }
 
   .card-title {

@@ -1,5 +1,6 @@
 <header>
-  {{!-- <div id="search-bar">
+  {{!--
+  <div id="search-bar">
     <div class="container">
       <div class="row">
         <form action="#" name="search" class="col-xs-12">
@@ -15,41 +16,29 @@
       <div class="row">
         <div class="logo-wrap col-md-3 col-xs-6">
           {{#link-to "index"}}
-            <img src="assets/img/logo.png" alt="">
-          {{/link-to}}
+          <img src="assets/img/logo.png" alt=""> {{/link-to}}
         </div>
         <div class="menu-wrap col-md-8 ">
           <ul class="menu">
-            {{#link-to "index" tagName="li" href=false}}
-              {{#link-to  "index"}}What is Empire Park?{{/link-to}}
-            {{/link-to}}
-
-            {{#link-to  "programs" tagName="li" href=false}}
-              {{#link-to  "programs"}}Programs{{/link-to}}
-            {{/link-to}}
-
-            {{#link-to  "volunteers" tagName="li" href=false}}
-              {{#link-to  "volunteers"}}Volunteers{{/link-to}}
-            {{/link-to}}
-
-            {{#link-to  "membership" tagName="li" href=false}}
-              {{#link-to  "membership"}}Purchase a Membership{{/link-to}}
-            {{/link-to}}
-
-            {{!-- <li>
+            {{#link-to "index" tagName="li" href=false}} {{#link-to "index"}}What is Empire Park?{{/link-to}} {{/link-to}} {{#link-to "programs" tagName="li" href=false}} {{#link-to "programs"}}Programs{{/link-to}} {{/link-to}} {{#link-to "volunteers" tagName="li" href=false}} {{#link-to "volunteers"}}Volunteers{{/link-to}} {{/link-to}} {{#link-to "membership" tagName="li" href=false}} {{#link-to "membership"}}Purchase a Membership{{/link-to}} {{/link-to}} {{!--
+            <li>
               <a href="/rentals">Rentals</a>
-            </li> --}}
-            {{!-- <li>
+            </li> --}} {{!--
+            <li>
               <a href="members.html">Members Portal</a>
-            </li> --}}
-
-            {{!-- Submenu example
+            </li> --}} {{!-- Submenu example
             <li>
               <span>Rentals</span>
               <ul class="submenu">
-                <li><a href="link1.html">Link 1</a></li>
-                <li><a href="link2.html">Link 2</a></li>
-                <li><a href="link3.html" class="active">Link 3</a></li>
+                <li>
+                  <a href="link1.html">Link 1</a>
+                </li>
+                <li>
+                  <a href="link2.html">Link 2</a>
+                </li>
+                <li>
+                  <a href="link3.html" class="active">Link 3</a>
+                </li>
               </ul>
             </li> --}}
           </ul>
@@ -58,7 +47,8 @@
           <div id="menu-toggle">
             <i class="fa fa-bars"></i>
           </div>
-          {{!-- <div id="search-toggle">
+          {{!--
+          <div id="search-toggle">
             <i class="fa fa-search"></i>
           </div> --}}
         </div>
@@ -89,11 +79,11 @@
             <li>excluding statutory holidays</li>
           </ul>
           <div class="social-media clearfix">
-            <a href="#">
+            <a href="https://twitter.com/empireparkcl/">
               <i class="fa fa-twitter"></i>
               <span>Twitter</span>
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/empireparksw">
               <i class="fa fa-facebook"></i>
               <span>Facebook</span>
             </a>
@@ -136,20 +126,22 @@
         <div class="quick-links card">
           <h4 class="card-title">Quick Links</h4>
           <div class="links">
-            <a href="#">
-              <i class="fa fa-angle-double-right"></i>About Us</a>
-            <a href="#">
-              <i class="fa fa-angle-double-right"></i>Programs</a>
-            <a href="#">
-              <i class="fa fa-angle-double-right"></i>Volunteer</a>
-            <a href="#">
-              <i class="fa fa-angle-double-right"></i>Rentals</a>
-            <a href="#">
+            {{!-- <a href="#">
+              <i class="fa fa-angle-double-right"></i>About Us</a> --}}
+            {{#link-to 'programs'}}
+              <i class="fa fa-angle-double-right"></i>Programs
+            {{/link-to}}
+            {{#link-to 'volunteers'}}
+              <i class="fa fa-angle-double-right"></i>Volunteer
+            {{/link-to}}
+            {{!-- <a href="#">
+              <i class="fa fa-angle-double-right"></i>Rentals</a> --}}
+            {{!-- <a href="#">
               <i class="fa fa-angle-double-right"></i>Members Portal</a>
             <a href="#">
               <i class="fa fa-angle-double-right"></i>Directors Portal</a>
             <a href="#">
-              <i class="fa fa-angle-double-right"></i>Privacy Policy</a>
+              <i class="fa fa-angle-double-right"></i>Privacy Policy</a> --}}
           </div>
         </div>
       </div>
@@ -158,8 +150,7 @@
         <div class="subcribe card">
           <h4 class="card-title">Subscribe</h4>
           <p>
-            Get our bi-monthly newsletter delivered directly to your email. Your email address will remain private
-            and can unsubscribe at any time.
+            Get our bi-monthly newsletter delivered directly to your email. Your email address will remain private and can unsubscribe at any time.
           </p>
           <form action="#">
             <div class="field">
