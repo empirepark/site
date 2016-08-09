@@ -8,7 +8,6 @@
   width: 100%;
   height: 100%;
   background: fade-out($secondary-color, 0.5);
-  z-index: 1;
 }
 
 @mixin parallax-background($url) {

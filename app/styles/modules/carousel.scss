@@ -4,7 +4,7 @@
 }
 
 .carousel-caption {
-  bottom: 35%;
+  bottom: 40%;
 
   h3 {
     @include font-1-heavy;
@@ -13,6 +13,7 @@
     color: $white;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0.15rem;
   }
 
   p {
@@ -20,6 +21,7 @@
     font-size: 20px;
     color: $white;
     text-align: center;
+    margin-bottom: 0.5rem;
   }
 
   .btn {
@@ -28,13 +30,18 @@
 }
 
 .carousel-control {
-  z-index: 1;
+  z-index: 14;
 }
 
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
   font-size: 5rem;
   height: 30px;
-  margin-top: -15px;
   width: 30px;
+  bottom: 50%;
+  top: initial;
+}
+
+.carousel .mask {
+  z-index: 2;
 }

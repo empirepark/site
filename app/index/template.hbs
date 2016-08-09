@@ -1,5 +1,4 @@
 <div id="main-slider" class="carousel slide" data-ride="carousel">
-  <div class="mask"></div>
   <ol class="carousel-indicators">
     <li data-target="#main-slider" data-slide-to="0" class="active"></li>
     <li data-target="#main-slider" data-slide-to="1"></li>
@@ -7,24 +6,30 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
+      <div class="mask"></div>
       <img src="/assets/img/slides/membership-drive.jpg" alt="Community membership drive"/>
       <div class="carousel-caption">
         <h3>Annual Membership Drive</h3>
         <p>Empire Park staff will be coming to your door. Know what to look for...</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
       </div>
     </div>
     <div class="carousel-item">
+      <div class="mask"></div>
       <img src="/assets/img/slides/fire.jpg" alt="Second slide">
       <div class="carousel-caption">
         <h3>Movie in the Park</h3>
         <p>September 17th Walking Dead will play in Empire Park</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
       </div>
     </div>
     <div class="carousel-item">
+      <div class="mask"></div>
       <img src="/assets/img/slides/bbq.jpg" alt="Kid on Swing">
       <div class="carousel-caption">
         <h3>Community League Day</h3>
         <p>Celebrating communities across the city, Empire Park will be hosting a raging party!</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
       </div>
     </div>
   </div>
@@ -119,7 +124,8 @@
       </div>
       <div class="col-lg-7">
         <div class="countdown clearfix">
-          <h3>
+          {{countdown-display startDate=1474140600000}}
+          {{!-- <h3>
             <span class="days">-24</span>
             <span class="timeRefDays">days</span>
           </h3>
@@ -134,7 +140,7 @@
           <h3>
             <span class="seconds">17</span>
             <span class="timeRefSeconds">seconds</span>
-          </h3>
+          </h3> --}}
         </div>
       </div>
     </div>
@@ -174,8 +180,9 @@
           We're always on the lookout for great talent so if you or anyone you know might be interested check out our
           position postings!
         </p>
-        <a href="#" class="btn btn-big">
-          <i class="fa fa-heartbeat"></i>Become a Volunteer</a>
+        {{#link-to "volunteers" class="btn btn-big"}}
+          <i class="fa fa-heartbeat"></i>Become a Volunteer
+        {{/link-to}}
       </div>
       <div class="col-sm-6 images-outer ">
         <div class="images-inner ">

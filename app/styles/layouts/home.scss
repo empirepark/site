@@ -75,124 +75,124 @@
 }
 
 .event-wrapper {
+  position: relative;
+  padding: 105px 0;
+  background: url("/assets/img/parallax/img-3.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  .container {
     position: relative;
-    padding: 105px 0;
-    background: url("/assets/img/parallax/img-3.jpg") center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    .container {
-        position: relative;
-        z-index: 10;
+    z-index: 10;
+  }
+  h2,
+  h4,
+  p {
+    color: #fff;
+  }
+  h2 {
+    text-transform: uppercase;
+    @include font-1-heavy;
+  }
+  h4 {
+    display: inline-block;
+    @include font-2-regular;
+    padding: 10px 5px 25px;
+    i {
+      font-size: 14px;
+      margin-right: 5px;
     }
-    h2,
-    h4,
+  }
+  p {
+    width: 55%;
+    margin: 0 auto 35px;
+  }
+  @media screen and (max-width:1200px) {
     p {
-        color: #fff;
+      width: 75%;
     }
-    h2 {
-        text-transform: uppercase;
-        @include font-1-heavy;
-    }
-    h4 {
-        display: inline-block;
-        @include font-2-regular;
-        padding: 10px 5px 25px;
-        i {
-            font-size: 14px;
-            margin-right: 5px;
-        }
-    }
+  }
+  @media screen and (max-width:991px) {
     p {
-        width: 55%;
-        margin: 0 auto 35px;
+      width: 90%;
     }
-    @media screen and (max-width:1200px) {
-        p {
-            width: 75%;
-        }
-    }
-    @media screen and (max-width:991px) {
-        p {
-            width: 90%;
-        }
-    }
+  }
 }
 
 .volunteers-wrapper {
-    background: #fcfcfc;
-    padding: 95px 0;
-    overflow-x: hidden;
-    .images-outer {
-        height: 100%;
+  background: #fcfcfc;
+  padding: 95px 0;
+  overflow-x: hidden;
+  .images-outer {
+    height: 100%;
+    position: relative;
+    .images-inner {
+      position: relative;
+      // left: 50%;
+      // margin-left: -147px;
+      float: right;
+      .images {
+        padding: 3px 0;
+        display: block;
+        float: none;
+      }
+      .nivo-trigger {
+        opacity: .8;
         position: relative;
-        .images-inner {
-            position: relative;
-            // left: 50%;
-            // margin-left: -147px;
-            float: right;
-            .images {
-                padding: 3px 0;
-                display: block;
-                float: none;
-            }
-            .nivo-trigger {
-                opacity: .8;
-                position: relative;
-                margin: 0 3px;
-                transition: opacity .1s linear;
-                display: block;
-                float: left;
-                text-align: center;
-                span {
-                    display: inline-block;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    line-height: 96px;
-                    background: fade($secondary-color, 85%);
-                    font-size: 18px;
-                    color: fade(#fff, 0%);
-                    opacity: 0;
-                    transition: opacity .3s ease, color .4s ease;
-                }
-                &:hover {
-                    opacity: 1;
-                    span {
-                        opacity: 1;
-                        color: fade(#ddd, 85%);
-                    }
-                }
-            }
+        margin: 0 3px;
+        transition: opacity .1s linear;
+        display: block;
+        float: left;
+        text-align: center;
+        span {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          line-height: 96px;
+          background: fade($secondary-color, 85%);
+          font-size: 18px;
+          color: fade(#fff, 0);
+          opacity: 0;
+          transition: opacity .3s ease, color .4s ease;
         }
+        &:hover {
+          opacity: 1;
+          span {
+            opacity: 1;
+            color: fade(#ddd, 0.85);
+          }
+        }
+      }
     }
-    .info-block {
-        padding: 4.3% 15px 0;
-        h2 {
-            text-transform: uppercase;
-            color: $text-base;
-            @include font-1-heavy;
-            span {
-                color: $base;
-            }
-        }
-        p {
-            color: $text-base-2;
-            margin: 20px 0 30px;
-        }
-        .btn {
-            border: 1px solid fade($text-base-2, 85%);
-            color: $text-base-2;
-            transition: color .3s ease-in-out, background .3s ease-in-out;
-            &:hover {
-                background: fade($text-base-2, 85%);
-                color: #fff;
-            }
-        }
+  }
+  .info-block {
+    padding: 4.3% 15px 0;
+    h2 {
+      text-transform: uppercase;
+      color: $text-base;
+      @include font-1-heavy;
+      span {
+        color: $base;
+      }
     }
-    @media screen and (max-width:767px) {
-        .images-outer {
-            margin-top: 50px;
-        }
+    p {
+      color: $text-base-2;
+      margin: 20px 0 30px;
     }
+    .btn {
+      border: 1px solid fade-in($text-base-2, 0.85);
+      color: $text-base-2;
+      transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+      &:hover {
+        background: fade-in($text-base-2, 0.85);
+        color: #fff;
+      }
+    }
+  }
+  @media screen and (max-width:767px) {
+    .images-outer {
+      margin-top: 50px;
+    }
+  }
 }

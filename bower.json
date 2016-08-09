@@ -8,6 +8,7 @@
     "font-awesome": "^4.6.3",
     "pretender": "~1.1.0",
     "Faker": "~3.1.0",
-    "showdown": "^1.4.2"
+    "showdown": "^1.4.2",
+    "countdownjs": "^2.6.0"
   }
 }
