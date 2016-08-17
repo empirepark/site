@@ -1,20 +1,20 @@
 <div id="main-slider" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
+  {{!-- <ol class="carousel-indicators">
     <li data-target="#main-slider" data-slide-to="0" class="active"></li>
     <li data-target="#main-slider" data-slide-to="1"></li>
     <li data-target="#main-slider" data-slide-to="2"></li>
-  </ol>
+  </ol> --}}
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <div class="mask"></div>
       <img src="/assets/img/slides/membership-drive.jpg" alt="Community membership drive"/>
       <div class="carousel-caption">
-        <h3>Annual Membership Drive</h3>
-        <p>Empire Park staff will be coming to your door. Know what to look for...</p>
-        <a href="#" class="btn btn-primary">Learn More</a>
+        <h3>Membership Drive & Awareness Campaign</h3>
+        <p>Empire Park Community Leauge volunteers will be coming to your door to spread awareness of what we do. It's also a great time to pick up a membership!</p>
+        {{!-- <a href="#" class="btn btn-primary">Learn More</a> --}}
       </div>
     </div>
-    <div class="carousel-item">
+    {{!-- <div class="carousel-item">
       <div class="mask"></div>
       <img src="/assets/img/slides/fire.jpg" alt="Second slide">
       <div class="carousel-caption">
@@ -22,8 +22,8 @@
         <p>September 17th Walking Dead will play in Empire Park</p>
         <a href="#" class="btn btn-primary">Learn More</a>
       </div>
-    </div>
-    <div class="carousel-item">
+    </div> --}}
+    {{!-- <div class="carousel-item">
       <div class="mask"></div>
       <img src="/assets/img/slides/bbq.jpg" alt="Kid on Swing">
       <div class="carousel-caption">
@@ -31,16 +31,16 @@
         <p>Celebrating communities across the city, Empire Park will be hosting a raging party!</p>
         <a href="#" class="btn btn-primary">Learn More</a>
       </div>
-    </div>
+    </div> --}}
   </div>
-  <a class="left carousel-control" href="#main-slider" role="button" data-slide="prev">
+  {{!-- <a class="left carousel-control" href="#main-slider" role="button" data-slide="prev">
     <span class="icon-prev" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#main-slider" role="button" data-slide="next">
     <span class="icon-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>
+  </a> --}}
 </div>
 
 <section class="segment features">
@@ -65,7 +65,7 @@
               </div>
               <h4>Access & Discounts</h4>
               <p>
-                Membership provides access to minor sports such as Soccer and Basketball along with discounts at City of Edmonton Recreation Facilities
+                Membership provides access to minor sports such as Soccer and Baseball along with some discounts at City of Edmonton Recreation Facilities
               </p>
               <a href="#" class="btn btn-min btn-secondary">Learn More</a>
             </div>
@@ -78,7 +78,7 @@
               </div>
               <h4>Free Swimming</h4>
               <p>
-                Each membership grants users several entries into Edmonton Confederation Pool for free. Just one more perk of being a member
+                Each membership grants users several entries into Edmonton Confederation Pool's public swim times for free. Just one more perk of being a member
               </p>
               <a href="#" class="btn btn-min btn-secondary">Learn More</a>
             </div>
@@ -91,7 +91,7 @@
               </div>
               <h4>Neighbourhood Decisions</h4>
               <p>
-                A core responsibility of Community Leagues is to provide representation for their neighbourhoods and our members help set our priorities and future goals
+                Community leagues are recognized by the City of Edmonton as the primary speaking body for a community. We are independent and our members help determine our priorities.
               </p>
               <a href="#" class="btn btn-min btn-secondary">Learn More</a>
             </div>
@@ -104,7 +104,7 @@
               </div>
               <h4>Discounted Hall Rental</h4>
               <p>
-                Need a place to hold a birthday party? We offer greatly discounted rental rate for our hall to our members.
+                Need a place to hold a birthday party? We offer greatly discounted rental rates for our hall to our members.
               </p>
               <a href="#" class="btn btn-min btn-secondary">Learn More</a>
             </div>
@@ -163,10 +163,10 @@
       their neighbourhoods. We'll have non stop Pokemon lures setup at our three Pokestops along with food, games and
       live music.
     </p>
-    <a href="#" class="btn btn-big btn-solid">
+    {{!-- <a href="#" class="btn btn-big btn-solid">
       <i class="fa fa-compass"></i>
       <span>Learn More</span>
-    </a>
+    </a> --}}
   </div>
 </div>
 
@@ -177,15 +177,18 @@
         <h2>We Need<span> Volunteers</span></h2>
         <p>
           Empire Park is a registered non-profit that functions because of the good will and generosity of volunteers.
-          We're always on the lookout for great talent so if you or anyone you know might be interested check out our
-          position postings!
+          We're always on the lookout for great talent so if you or anyone you know might be interested contact us at <strong>volunteers@empirepark.ca</strong>
         </p>
-        {{#link-to "volunteers" class="btn btn-big"}}
+
+        <p>
+          Remember to check back in a few weeks when we launch our volunteers posting page!
+        </p>
+        {{!-- {{#link-to "volunteers" class="btn btn-big"}}
           <i class="fa fa-heartbeat"></i>Become a Volunteer
-        {{/link-to}}
+        {{/link-to}} --}}
       </div>
       <div class="col-sm-6 images-outer ">
-        <img src="/assets/img/butterfly.svg" class="thumbnail">
+        <img src="/assets/img/hall.jpg" class="thumbnail">
         {{!-- <div class="images-inner ">
           <div class="nivo-activator"></div>
           <div class="images clearfix">
@@ -623,7 +626,7 @@
 </div> --}}
 
 
-<section class="contact-us">
+{{!-- <section class="contact-us">
   <div class="mask"></div>
   <div class="container">
     <div class="title">
@@ -659,4 +662,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
