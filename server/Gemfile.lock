@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/norman/friendly_id.git
+  revision: aff0564584e84ffa505e6e278b65ca3c4ee5d698
+  branch: master
+  specs:
+    friendly_id (5.2.0.beta.1)
+      activerecord (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -127,6 +135,7 @@ DEPENDENCIES
   acts_as_list (>= 0.7.7)
   annotate (>= 2.7.1)
   byebug
+  friendly_id!
   pg (~> 0.19.0.pre20160810143640)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)

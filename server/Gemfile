@@ -14,6 +14,9 @@ gem 'annotate', '>= 2.7.1'
 # Adds sorting capabilities to Active Record through the `position`
 gem 'acts_as_list', '>= 0.7.7'
 
+# Changes urls from example.com/blog/1234 => example.com/blog/10-reasons-to-freak-out
+gem 'friendly_id', git: 'https://github.com/norman/friendly_id.git', branch: 'master'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 
