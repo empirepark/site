@@ -48,8 +48,10 @@ Positions related to ongoing programs. These require a commitment for a period o
 ]
 
 job_categories.each do |item|
-  record = JobCategory.find_or_initialize_by(title: item['title'])
-  record.update(item)
+  record = JobCategory.find_or_initialize_by(title: item[:title])
+  item[:description] = item[:description].strip
+  record.assign_attributes item
+  record.save!
 end
 
 
@@ -63,6 +65,7 @@ asset_types = [
 ]
 
 asset_types.each do |item|
-  record = AssetType.find_or_initialize_by(name: item['name'])
-  record.update(item)
+  record = AssetType.find_or_initialize_by(name: item[:name])
+  record.assign_attributes item
+  record.save!
 end
