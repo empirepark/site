@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  thumbnail_dimensions: MyString
+  min_dimensions: MyString
+  max_dimensions: MyString
+  optimize: false
+  allowed_filetypes: MyString
+
+two:
+  thumbnail_dimensions: MyString
+  min_dimensions: MyString
+  max_dimensions: MyString
+  optimize: false
+  allowed_filetypes: MyString

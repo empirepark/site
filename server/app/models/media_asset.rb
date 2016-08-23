@@ -1,0 +1,2 @@
+class MediaAsset < ApplicationRecord
+end

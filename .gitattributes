@@ -36,6 +36,7 @@ text eol=lf
 *.tif binary
 *.tiff binary
 *.ico binary
+*.mwb binary
 # SVG treated as an asset (binary) by default. If you want to treat it as text,
 # comment-out the following line and uncomment the line after.
 *.svg binary

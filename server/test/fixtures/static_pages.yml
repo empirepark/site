@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sort_order: 1
+  slug: MyString
+  status: MyString
+  title: MyString
+  content: MyText
+  media_asset: one
+  published_at: 2016-08-22 22:35:03
+
+two:
+  sort_order: 1
+  slug: MyString
+  status: MyString
+  title: MyString
+  content: MyText
+  media_asset: two
+  published_at: 2016-08-22 22:35:03

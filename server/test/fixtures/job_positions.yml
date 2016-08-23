@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  slug: MyString
+  title: MyString
+  job_category: one
+  labels: MyString
+  time_commitment: MyString
+  description: MyText
+  responsibilities: MyText
+  requirements: MyText
+  apply_instructions: MyText
+  published_at: 2016-08-22 22:57:26
+
+two:
+  slug: MyString
+  title: MyString
+  job_category: two
+  labels: MyString
+  time_commitment: MyString
+  description: MyText
+  responsibilities: MyText
+  requirements: MyText
+  apply_instructions: MyText
+  published_at: 2016-08-22 22:57:26
