@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ENV['RUBY_DEP_GEM_SILENCE_WARNINGS'] = '1'
+# ENV['RUBY_DEP_GEM_SILENCE_WARNINGS'] = '1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -27,6 +27,15 @@ gem 'friendly_id', git: 'https://github.com/norman/friendly_id.git', branch: 'ma
 gem 'carrierwave', git: 'https://github.com/carrierwaveuploader/carrierwave', branch: 'master'
 gem 'carrierwave-aws', '~> 1.0'
 
+gem 'dry-types'
+gem 'dry-validation'
+gem 'dry-struct'
+
+gem 'rom'
+gem 'rom-rails'
+gem 'rom-repository'
+gem 'rom-mapper'
+gem 'rom-sql'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
