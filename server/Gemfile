@@ -5,11 +5,14 @@ ENV['RUBY_DEP_GEM_SILENCE_WARNINGS'] = '1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
+# Use Puma as the app server
+gem 'puma', '~> 3.0'
+
 # Serializes Active Record models into JSON API compatible responses
-gem 'active_model_serializers', '>= 0.10.2'
+gem 'active_model_serializers', '~> 0.10'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.19.0.pre20160810143640'
+gem 'pg', '~> 0.19'
 
 # Write schema information in rails models
 gem 'annotate', '>= 2.7.1'
@@ -24,8 +27,6 @@ gem 'friendly_id', git: 'https://github.com/norman/friendly_id.git', branch: 'ma
 gem 'carrierwave', git: 'https://github.com/carrierwaveuploader/carrierwave', branch: 'master'
 gem 'carrierwave-aws', '~> 1.0'
 
-# Use Puma as the app server
-gem 'puma', '~> 3.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -41,15 +42,27 @@ gem 'puma', '~> 3.0'
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'browser_sync_rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'factory_girl_rails', '~> 4.7'
+  gem 'faker', '~> 1.6'
+  gem 'minitest-reporters'
+  gem 'minitest-spec-rails', '~> 5.4'
 end
 
 group :development do
   gem 'guard', '>= 2.14.0', :require => false
-  gem 'guard-minitest', '2.4.5', :require => false
+  gem 'guard-minitest', :require => false
   gem 'rb-fsevent', :require => false
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+  gem 'win32console' if Gem.win_platform?
+
+  gem 'seed-fu', '~> 2.3'
+
+  gem 'web-console'
+
+  gem 'scss-lint', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
